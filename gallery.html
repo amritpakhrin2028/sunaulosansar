@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Sunaulo Sansar Photography</title>
+  <meta name="description" content="Browse Sunaulo Sansar Photography's full gallery â€” weddings, portraits, landscapes, events, wildlife, and aerial photography from across Nepal." />
+  <link rel="canonical" href="gallery.html" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <div id="preloader" role="status" aria-label="Loading">
+    <div class="preloader-logo">Sunaulo Sansar</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox">
+    <button id="lb-close" class="lightbox-close" aria-label="Close">âœ•</button>
+    <button id="lb-prev"  class="lightbox-nav lightbox-prev" aria-label="Previous">â€¹</button>
+    <button id="lb-next"  class="lightbox-nav lightbox-next" aria-label="Next">â€º</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Gallery photo" />
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header id="navbar" role="banner">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Sunaulo Sansar Photography Home">
+        <span class="logo-main">Sunaulo Sansar</span>
+        <span class="logo-sub">Photography</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Book Now</a>
+  </nav>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero section--dark" aria-label="Gallery page hero">
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="tag reveal">Our Portfolio</div>
+        <h1 class="page-hero-title reveal delay-1">Photo <span>Gallery</span></h1>
+        <p class="section-subtitle reveal delay-2" style="margin:16px auto 0;">A curated collection of moments, moods, and memories â€” captured across Nepal's stunning landscapes and vibrant cultures.</p>
+        <div class="page-breadcrumb reveal delay-3">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Gallery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section--dark" id="gallery-main" aria-label="Photo gallery">
+      <div class="container">
+        <!-- Filters -->
+        <div class="gallery-filters reveal" role="group" aria-label="Category filters">
+          <button class="filter-btn active" data-filter="all" id="gal-filter-all">All Photos</button>
+          <button class="filter-btn" data-filter="wedding" id="gal-filter-wedding">ðŸ’ Wedding</button>
+          <button class="filter-btn" data-filter="portrait" id="gal-filter-portrait">ðŸŽ­ Portrait</button>
+          <button class="filter-btn" data-filter="landscape" id="gal-filter-landscape">ðŸ” Landscape</button>
+          <button class="filter-btn" data-filter="event" id="gal-filter-event">ðŸŽŠ Events</button>
+          <button class="filter-btn" data-filter="commercial" id="gal-filter-commercial">ðŸ“¦ Commercial</button>
+          <button class="filter-btn" data-filter="aerial" id="gal-filter-aerial">ðŸš Aerial</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-page-grid" role="list">
+
+          <!-- Wedding -->
+          <div class="gallery-page-item portrait reveal" data-category="wedding"
+               data-src="images/gallery/photo-01.svg"
+               data-caption="Traditional Nepali Wedding â€” Kathmandu, 2024"
+               role="listitem" aria-label="Wedding photography">
+            <img class="gallery-img" src="images/gallery/photo-01.svg" alt="Traditional Nepali wedding with bride in red and gold" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Wedding</span>
+              <span class="gallery-caption">Traditional Wedding, Kathmandu 2024</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Portrait -->
+          <div class="gallery-page-item reveal delay-1" data-category="portrait"
+               data-src="images/gallery/photo-02.svg"
+               data-caption="Golden Hour Portrait â€” Pokhara, 2024"
+               role="listitem" aria-label="Portrait photography">
+            <img class="gallery-img" src="images/gallery/photo-02.svg" alt="Dramatic portrait with golden hour lighting" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Portrait</span>
+              <span class="gallery-caption">Golden Hour Portrait, Pokhara</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Landscape wide -->
+          <div class="gallery-page-item wide reveal delay-2" data-category="landscape"
+               data-src="images/gallery/photo-03.svg"
+               data-caption="Annapurna Reflection â€” Phewa Lake, Pokhara"
+               role="listitem" aria-label="Landscape photography">
+            <img class="gallery-img" src="images/gallery/photo-03.svg" alt="Mountain reflection on Phewa Lake at sunrise" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Landscape</span>
+              <span class="gallery-caption">Annapurna Reflection â€” Phewa Lake</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Wildlife -->
+          <div class="gallery-page-item reveal" data-category="landscape"
+               data-src="images/gallery/photo-04.svg"
+               data-caption="Peacock in Chitwan National Park"
+               role="listitem" aria-label="Wildlife photography">
+            <img class="gallery-img" src="images/gallery/photo-04.svg" alt="Colorful peacock in Chitwan jungle" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Wildlife</span>
+              <span class="gallery-caption">Peacock, Chitwan National Park</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Event -->
+          <div class="gallery-page-item reveal delay-1" data-category="event"
+               data-src="images/gallery/photo-05.svg"
+               data-caption="Pashupatinath Festival â€” Kathmandu"
+               role="listitem" aria-label="Event photography">
+            <img class="gallery-img" src="images/gallery/photo-05.svg" alt="Festival photography at Pashupatinath temple" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Event</span>
+              <span class="gallery-caption">Pashupatinath Festival, Kathmandu</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Commercial -->
+          <div class="gallery-page-item reveal delay-2" data-category="commercial"
+               data-src="images/gallery/photo-06.svg"
+               data-caption="Dal Bhat Food Photography"
+               role="listitem" aria-label="Commercial food photography">
+            <img class="gallery-img" src="images/gallery/photo-06.svg" alt="Professional food photography of Nepali dal bhat" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Commercial</span>
+              <span class="gallery-caption">Dal Bhat Thali â€” Food Photography</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Aerial / Trekking landscape -->
+          <div class="gallery-page-item portrait reveal" data-category="aerial"
+               data-src="images/gallery/photo-07.svg"
+               data-caption="Everest Base Camp Trek â€” Himalaya"
+               role="listitem" aria-label="Aerial adventure photography">
+            <img class="gallery-img" src="images/gallery/photo-07.svg" alt="Trekker at Everest Base Camp route against Himalayan sunset" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Aerial / Adventure</span>
+              <span class="gallery-caption">Everest Base Camp Trek</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Macro -->
+          <div class="gallery-page-item reveal delay-1" data-category="landscape"
+               data-src="images/gallery/photo-08.svg"
+               data-caption="Rhododendron Macro â€” Himalayan Forest"
+               role="listitem" aria-label="Macro nature photography">
+            <img class="gallery-img" src="images/gallery/photo-08.svg" alt="Macro photography of red rhododendron flower" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Macro</span>
+              <span class="gallery-caption">Rhododendron, Himalayan Forest</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Extra Wedding -->
+          <div class="gallery-page-item wide reveal delay-2" data-category="wedding"
+               data-src="images/gallery/photo-01.svg"
+               data-caption="Wedding Ceremony Details â€” Bhaktapur, 2024"
+               role="listitem" aria-label="Wedding details photography">
+            <img class="gallery-img" src="images/gallery/photo-01.svg" alt="Wedding ceremony floral details and decorations" loading="lazy" style="object-position:bottom;" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Wedding</span>
+              <span class="gallery-caption">Wedding Ceremony, Bhaktapur 2024</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Extra Portrait -->
+          <div class="gallery-page-item reveal" data-category="portrait"
+               data-src="images/gallery/photo-02.svg"
+               data-caption="Studio Portrait Session â€” Kathmandu 2025"
+               role="listitem" aria-label="Studio portrait">
+            <img class="gallery-img" src="images/gallery/photo-02.svg" alt="Professional studio portrait" loading="lazy" style="object-position:top;" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Portrait</span>
+              <span class="gallery-caption">Studio Session, Kathmandu 2025</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Extra Landscape -->
+          <div class="gallery-page-item reveal delay-1" data-category="landscape"
+               data-src="images/gallery/photo-03.svg"
+               data-caption="Sunrise â€” Nagarkot Viewpoint"
+               role="listitem" aria-label="Sunrise landscape">
+            <img class="gallery-img" src="images/gallery/photo-03.svg" alt="Dramatic sunrise viewed from Nagarkot" loading="lazy" style="object-position:top;" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Landscape</span>
+              <span class="gallery-caption">Sunrise, Nagarkot Viewpoint</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+          <!-- Extra Event -->
+          <div class="gallery-page-item reveal delay-2" data-category="event"
+               data-src="images/gallery/photo-05.svg"
+               data-caption="Teej Festival â€” Pashupatinath, 2024"
+               role="listitem" aria-label="Festival event">
+            <img class="gallery-img" src="images/gallery/photo-05.svg" alt="Women in red celebrating Teej festival" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Festival</span>
+              <span class="gallery-caption">Teej Festival, Pashupatinath</span>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Open full image">ðŸ”</button>
+          </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div style="text-align:center; margin-top:64px;" class="reveal">
+          <p style="color:var(--clr-text-muted); margin-bottom:24px; font-size:1rem;">Loved what you saw? Let's create something amazing together.</p>
+          <a href="contact.html" class="btn btn-primary" id="gallery-book-cta">ðŸ“… Book Your Session</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="logo-main">Sunaulo Sansar</div>
+          <div class="logo-sub">Photography</div>
+          <p>Nepal's premier photography studio â€” capturing the golden world around us, one frame at a time.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">ðŸ“˜</a>
+            <a href="#" class="social-link" aria-label="Instagram">ðŸ“¸</a>
+            <a href="#" class="social-link" aria-label="YouTube">â–¶</a>
+            <a href="#" class="social-link" aria-label="WhatsApp">ðŸ’¬</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="index.html#services">Wedding Photography</a></li>
+            <li><a href="index.html#services">Portrait Sessions</a></li>
+            <li><a href="index.html#services">Landscape & Travel</a></li>
+            <li><a href="index.html#services">Commercial Shoots</a></li>
+            <li><a href="index.html#services">Event Coverage</a></li>
+            <li><a href="index.html#services">Aerial & Drone</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Stay Inspired</h5>
+          <p style="font-size:0.88rem; color:var(--clr-text-muted); margin-bottom:0;">Get our latest photo stories delivered to your inbox.</p>
+          <form class="footer-newsletter newsletter-form" aria-label="Newsletter signup">
+            <div class="newsletter-input-wrap">
+              <input type="email" placeholder="Your email address" aria-label="Email" required />
+              <button type="submit" aria-label="Subscribe">â†’</button>
+            </div>
+          </form>
+          <p class="footer-note">No spam. Unsubscribe any time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+        <p>Â© 2026 <a href="index.html">Sunaulo Sansar Photography</a>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">â†‘</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+

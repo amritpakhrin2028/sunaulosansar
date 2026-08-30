@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Sunaulo Sansar Photography</title>
+  <meta name="description" content="Meet the team behind Sunaulo Sansar Photography — passionate photographers dedicated to capturing Nepal's beauty and your most precious moments." />
+  <link rel="canonical" href="about.html" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <div id="preloader" role="status" aria-label="Loading">
+    <div class="preloader-logo">Sunaulo Sansar</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+
+  <!-- No lightbox needed on about page — include stub for script.js compatibility -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" style="display:none;">
+    <button id="lb-close" class="lightbox-close" aria-label="Close">✕</button>
+    <button id="lb-prev"  class="lightbox-nav lightbox-prev" aria-label="Previous">‹</button>
+    <button id="lb-next"  class="lightbox-nav lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header id="navbar" role="banner">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Sunaulo Sansar Photography Home">
+        <span class="logo-main">Sunaulo Sansar</span>
+        <span class="logo-sub">Photography</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Book Now</a>
+  </nav>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero section--dark" aria-label="About page hero">
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="tag reveal">Our Story</div>
+        <h1 class="page-hero-title reveal delay-1">About <span>Us</span></h1>
+        <p class="section-subtitle reveal delay-2" style="margin:16px auto 0;">
+          Passionate storytellers. Visual artists. Born and raised in Nepal — photographing the world's most breathtaking landscapes and intimate human moments since 2016.
+        </p>
+        <div class="page-breadcrumb reveal delay-3">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>About</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Mission & Story ── -->
+    <section class="section section--dark" id="our-story" aria-label="Our story">
+      <div class="container">
+        <div class="about-strip">
+          <div class="about-image-wrap reveal-left">
+            <div class="about-img-accent" aria-hidden="true"></div>
+            <img class="about-img-main" src="images/hero.jpg" alt="Sunaulo Sansar Photography — shooting in the Himalayas" loading="lazy" />
+            <div class="about-img-badge">
+              <div class="badge-number">2016</div>
+              <div class="badge-label">Founded in Nepal</div>
+            </div>
+          </div>
+
+          <div class="about-content reveal-right">
+            <div class="section-header">
+              <div class="tag">Our Mission</div>
+              <h2 class="section-title">Telling Nepal's <span>Golden Story</span></h2>
+              <div class="divider"></div>
+            </div>
+
+            <p class="about-text">
+              <strong style="color:var(--clr-text)">Sunaulo Sansar</strong> — meaning "Golden World" in Nepali — was born from a simple belief: every moment, every face, every mountain deserves to be seen in its full, radiant beauty.
+            </p>
+            <p class="about-text">
+              Founded in 2016 by lead photographer <strong style="color:var(--clr-text)">Arjun Thapa</strong> in Kathmandu, we've grown from a one-man studio into a full creative team serving clients across Nepal, India, and internationally. From intimate family portraits to large-scale commercial campaigns, our commitment to quality and artistry remains unchanged.
+            </p>
+            <p class="about-text">
+              We believe great photography is more than technical skill — it's empathy, patience, and the ability to become invisible so that authentic moments unfold naturally in front of your lens.
+            </p>
+
+            <div class="about-perks">
+              <div class="perk">
+                <div class="perk-icon">🇳🇵</div>
+                <div class="perk-text">
+                  <h4>Proudly Nepali</h4>
+                  <p>Rooted in Nepal's culture, landscapes, and people.</p>
+                </div>
+              </div>
+              <div class="perk">
+                <div class="perk-icon">📷</div>
+                <div class="perk-text">
+                  <h4>Pro Equipment</h4>
+                  <p>Sony Alpha, Canon EOS R, DJI Mavic Pro systems.</p>
+                </div>
+              </div>
+              <div class="perk">
+                <div class="perk-icon">🌍</div>
+                <div class="perk-text">
+                  <h4>International Work</h4>
+                  <p>Published in National Geographic Traveller, Lonely Planet.</p>
+                </div>
+              </div>
+              <div class="perk">
+                <div class="perk-icon">💛</div>
+                <div class="perk-text">
+                  <h4>Community First</h4>
+                  <p>10% of profits go to local arts education programs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats ── -->
+    <section class="section section--surface" id="about-stats" aria-label="Studio statistics">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="tag">By the Numbers</div>
+          <h2 class="section-title">Our <span>Achievements</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="stats-grid" style="max-width:900px; margin:0 auto;">
+          <div class="stat-item reveal">
+            <div class="stat-number" data-count="850" data-suffix="+">0+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-item reveal delay-1">
+            <div class="stat-number" data-count="12" data-suffix="K+">0K+</div>
+            <div class="stat-label">Photos Delivered</div>
+          </div>
+          <div class="stat-item reveal delay-2">
+            <div class="stat-number" data-count="8" data-suffix="+">0+</div>
+            <div class="stat-label">Years Active</div>
+          </div>
+          <div class="stat-item reveal delay-3">
+            <div class="stat-number" data-count="25" data-suffix="+">0+</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Team ── -->
+    <section class="section section--dark" id="team" aria-label="Our team">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="tag">The Creatives</div>
+          <h2 class="section-title">Meet Our <span>Team</span></h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">World-class talent with deep roots in Nepali culture and a shared passion for visual storytelling.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Lead Photographer -->
+          <div class="team-card reveal delay-1" id="team-arjun">
+            <div class="team-img" style="
+              background: linear-gradient(135deg, #1a0a28 0%, #5c1252 50%, #c2185b 100%);
+              display:flex; align-items:center; justify-content:center;
+              font-size:5rem;
+            " aria-hidden="true">📷</div>
+            <div class="team-body">
+              <div class="team-name">Arjun Thapa</div>
+              <div class="team-role">Founder & Lead Photographer</div>
+              <p class="team-bio">10 years of professional photography. Specialist in wedding and landscape photography. National Geographic featured. Based in Kathmandu.</p>
+            </div>
+          </div>
+
+          <!-- Portrait Specialist -->
+          <div class="team-card reveal delay-2" id="team-sita">
+            <div class="team-img" style="
+              background: linear-gradient(135deg, #0d1a0a 0%, #1b5e20 50%, #43a047 100%);
+              display:flex; align-items:center; justify-content:center;
+              font-size:5rem;
+            " aria-hidden="true">🎭</div>
+            <div class="team-body">
+              <div class="team-name">Sita Rai</div>
+              <div class="team-role">Portrait & Editorial Photographer</div>
+              <p class="team-bio">Trained at the International Center of Photography, New York. Expert in portrait, fashion, and editorial photography with a signature cinematic style.</p>
+            </div>
+          </div>
+
+          <!-- Drone Pilot -->
+          <div class="team-card reveal delay-3" id="team-bikram">
+            <div class="team-img" style="
+              background: linear-gradient(135deg, #0a1928 0%, #0d47a1 50%, #1976d2 100%);
+              display:flex; align-items:center; justify-content:center;
+              font-size:5rem;
+            " aria-hidden="true">🚁</div>
+            <div class="team-body">
+              <div class="team-name">Bikram Gurung</div>
+              <div class="team-role">Aerial Photographer & Drone Pilot</div>
+              <p class="team-bio">Licensed drone pilot with 6 years of aerial photography experience. Specialist in Himalayan mountain expeditions and resort/hotel photography.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Our Process ── -->
+    <section class="section section--surface" id="process" aria-label="Our photography process">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="tag">How We Work</div>
+          <h2 class="section-title">Our <span>Creative Process</span></h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">From first enquiry to final delivery — a seamless, professional experience designed around you.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal delay-1">
+            <div class="step-number">01</div>
+            <h4>Consultation</h4>
+            <p>We start with a detailed conversation to understand your vision, preferences, and specific requirements for the shoot.</p>
+          </div>
+          <div class="process-step reveal delay-2">
+            <div class="step-number">02</div>
+            <h4>Planning & Scouting</h4>
+            <p>Our team scouts locations, plans lighting conditions, and prepares a shot list to ensure nothing is missed on the day.</p>
+          </div>
+          <div class="process-step reveal delay-3">
+            <div class="step-number">03</div>
+            <h4>The Shoot</h4>
+            <p>We arrive early, set up professionally, and create an environment where you feel comfortable and natural in front of the camera.</p>
+          </div>
+          <div class="process-step reveal delay-4">
+            <div class="step-number">04</div>
+            <h4>Editing & Delivery</h4>
+            <p>Carefully curated and professionally edited photos are delivered in a beautiful online gallery within 7 days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Awards & Recognition ── -->
+    <section class="section section--dark" id="awards" aria-label="Awards and recognition">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="tag">Recognition</div>
+          <h2 class="section-title">Awards & <span>Publications</span></h2>
+          <div class="divider"></div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:24px;">
+          <div class="testimonial-card reveal delay-1" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:12px;">🏆</div>
+            <h3 style="font-family:var(--font-display); font-size:1.1rem; margin-bottom:8px; color:var(--clr-text);">Best Wedding Photographer</h3>
+            <p style="font-size:0.85rem; color:var(--clr-text-muted);">Nepal Photography Awards, 2023 & 2024</p>
+          </div>
+          <div class="testimonial-card reveal delay-2" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:12px;">📰</div>
+            <h3 style="font-family:var(--font-display); font-size:1.1rem; margin-bottom:8px; color:var(--clr-text);">Featured in National Geographic</h3>
+            <p style="font-size:0.85rem; color:var(--clr-text-muted);">Traveller Magazine — Nepal Special Edition, 2022</p>
+          </div>
+          <div class="testimonial-card reveal delay-3" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:12px;">🌟</div>
+            <h3 style="font-family:var(--font-display); font-size:1.1rem; margin-bottom:8px; color:var(--clr-text);">Top 10 Photographers in Nepal</h3>
+            <p style="font-size:0.85rem; color:var(--clr-text-muted);">Kantipur Media Group, 2021, 2022, 2023</p>
+          </div>
+          <div class="testimonial-card reveal delay-1" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:12px;">📸</div>
+            <h3 style="font-family:var(--font-display); font-size:1.1rem; margin-bottom:8px; color:var(--clr-text);">Lonely Planet Contributor</h3>
+            <p style="font-size:0.85rem; color:var(--clr-text-muted);">Nepal Destination Guide, 2020–2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(255,107,43,0.12), rgba(10,10,15,1)); text-align:center; position:relative; overflow:hidden;" aria-label="Call to action">
+      <div class="orb orb-1" style="opacity:0.5;" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="reveal">
+          <div class="tag">Let's Connect</div>
+          <h2 class="section-title" style="margin-top:12px;">Ready to Work <span>Together?</span></h2>
+          <p class="section-subtitle" style="margin:16px auto 40px;">Book a free 15-minute consultation and let's talk about your photography needs.</p>
+          <a href="contact.html" class="btn btn-primary" id="about-cta-btn">📬 Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="logo-main">Sunaulo Sansar</div>
+          <div class="logo-sub">Photography</div>
+          <p>Nepal's premier photography studio — capturing the golden world around us, one frame at a time.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+            <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="index.html#services">Wedding Photography</a></li>
+            <li><a href="index.html#services">Portrait Sessions</a></li>
+            <li><a href="index.html#services">Landscape & Travel</a></li>
+            <li><a href="index.html#services">Commercial Shoots</a></li>
+            <li><a href="index.html#services">Event Coverage</a></li>
+            <li><a href="index.html#services">Aerial & Drone</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Stay Inspired</h5>
+          <p style="font-size:0.88rem; color:var(--clr-text-muted); margin-bottom:0;">Get our latest photo stories delivered to your inbox.</p>
+          <form class="footer-newsletter newsletter-form" aria-label="Newsletter signup">
+            <div class="newsletter-input-wrap">
+              <input type="email" placeholder="Your email address" aria-label="Email" required />
+              <button type="submit" aria-label="Subscribe">→</button>
+            </div>
+          </form>
+          <p class="footer-note">No spam. Unsubscribe any time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+        <p>© 2026 <a href="index.html">Sunaulo Sansar Photography</a>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
